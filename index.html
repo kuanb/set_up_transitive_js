@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Transitive.js Leaflet Example - Kuan Butts</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TODO: Can we upgrade to 1.x? -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+</head>
+<body>
+  <div id="map"></div>
+  <div id="controls">
+    <span id="clear" class="control-link">Clear</span> |
+    <span id="load" class="control-link">Load</span>
+  </div>
+
+  <!-- include the sample Transitive data -->
+  <script src="data.js"></script>
+
+  <!-- include webpack build -->
+  <script src="build/bundle.js"></script>
+
+</body>
+</html>
