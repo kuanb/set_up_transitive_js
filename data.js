@@ -945,17 +945,3 @@ var DATA = {
     }]
   }]
 };
-
-var DATA_P = {
-  "places": [{
-    "place_id": "from",
-    "place_name": "Start: 1401 Wilson Blvd",
-    "place_lat": 38.894624,
-    "place_lon": -77.074159
-  }, {
-    "place_id": "to",
-    "place_name": "End: Union Station",
-    "place_lat": 38.89788,
-    "place_lon": -77.00597
-  }]
-};

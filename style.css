@@ -1,130 +1,71 @@
-
-/**
- * Transitive Base Styles, based on http://conveyal.com/Leaflet.TransitiveLayer
- */
-
-.Transitive {
-  overflow: hidden;
-}
-
-/**
- * Schematic Map
- */
-
-.Transitive > .schematic-map {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-}
-
-/**
- * Labels
- */
-
-.Transitive > .schematic-map .transitive-stop-label,
-.Transitive > .schematic-map .transitive-multi-label,
-.Transitive > .schematic-map .transitive-place-label {
-  text-shadow:
-   -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-     2px 2px 0 #fff;
-}
-
-.Transitive > .schematic-map .transitive-segment-label {
-  fill: #fff;
-}
-
-/**
- * Label Container
- */
-
-.Transitive > .schematic-map .transitive-segment-label-container {
-  fill: #008;
-}
-
-/**
- * Lines
- */
-
-.Transitive > .schematic-map .transitive-line {
-  stroke-linecap: round;
-  fill: none;
-}
-
-/**
- * Places
- */
-
-.Transitive > .schematic-map .transitive-place-circle {
-  fill: #fff;
-  stroke: #333;
-  stroke-width: 2px;
-}
-
-/**
- * Stops
- */
-
-.Transitive > .schematic-map .transitive-stop-marker-pattern,
-.Transitive > .schematic-map .transitive-stop-marker-merged,
-.Transitive > .schematic-map .transitive-multipoint-marker-merged {
-  fill: #fff;
-  stroke: #333;
-  stroke-width: 1px;
-}
-
-/**
- * Tile Layer
- */
-
-.Transitive > .tile-layer {
-  position: absolute;
-  z-index: 50;
-}
-
-.Transitive > .tile-layer > .tile {
-  pointer-events: none;
-  position: absolute;
-  width: 256px;
-  height: 256px;
-}
-
-/**
- * Grid
- */
-
-.Transitive .gridline {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1px;
-}
-
 body {
+  font-family: 'Helvetica', arial, sans-serif;
   margin: 0;
 }
 
-#map {
-  position:absolute;
+#canvas {
+  position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  margin-right: 400px;
+  background-color: #fff;
+}
+
+#legend {
+  position: absolute;
+  height: 30px;
+  border: 1px solid #e7e7e7;
+  left: 20px;
+  bottom: 20px;
+  background-color: #fff;
+  z-index: 150;
+}
+
+
+.legendLabel {
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 6px 20px 0px 10px;
+}
+
+.legendSvg {
+  width: 30px;
+  height: 30px;
+  float: left;
 }
 
 #controls {
-  background: #fff;
-  font-family: sans-serif;
-  padding: 10px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 20px 20px 0;
+  z-index: 150;
 }
 
-.control-link {
-  color: #00f;
+#renderers {
+  background: #e7e7e7;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.select-renderer {
+  color: blue;
   cursor: pointer;
+}
+
+.listItem {
+  margin-bottom: 20px;
+  color: #333;
+  cursor: default;
+}
+
+.listItem:hover {
+  font-weight: bold;
 }
